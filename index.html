@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dima</title>
+    <script async src="https://api.unitalk.cloud/script/9684/2906"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #0d1b2a;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover no-repeat;
+            height: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            background: rgba(0,0,0,0.6);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e63946;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #b71c1c;
+        }
+
+        .section {
+            padding: 70px 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .cars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .car-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .car-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .car-card div {
+            padding: 20px;
+        }
+
+        footer {
+            background: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        form {
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🇺🇸 DIMA</h1>
+    <nav>
+        <a href="#about">Про нас</a>
+        <a href="#cars">Авто</a>
+        <a href="#steps">Як працюємо</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Авто з США під ключ</h2>
+        <p>DIMA — професійний імпорт автомобілів з Америки</p>
+        <br>
+        <a href="#contact" class="btn">Отримати консультацію</a>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>Про компанію DIMA</h2>
+    <p>
+        DIMA спеціалізується на підборі та доставці авто з США.
+        Працюємо з Copart та IAAI, перевіряємо історію автомобіля,
+        організовуємо доставку та повний супровід до реєстрації.
+    </p>
+</section>
+
+<section class="section" id="cars">
+    <h2>Популярні моделі</h2>
+    <div class="cars">
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54c">
+            <div>
+                <h3>Ford Mustang</h3>
+                <p>Від 12 500$</p>
+                <a href="#contact" class="btn">Замовити</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+            <div>
+                <h3>Tesla Model 3</h3>
+                <p>Від 18 900$</p>
+                <a href="#contact" class="btn">Замовити</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+            <div>
+                <h3>Chevrolet Camaro</h3>
+                <p>Від 13 800$</p>
+                <a href="#contact" class="btn">Замовити</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="steps">
+    <h2>Як працює DIMA</h2>
+    <p>Підбір → Викуп → Доставка → Розмитнення → Реєстрація</p>
+</section>
+
+<section class="section" id="contact">
+    <h2>Залишити заявку</h2>
+    <form>
+        <input type="text" placeholder="Ваше ім'я" required>
+        <input type="tel" placeholder="Ваш телефон" required>
+        <textarea placeholder="Яке авто вас цікавить?"></textarea>
+        <button type="submit" class="btn">Надіслати заявку</button>
+    </form>
+
+    <p><strong>📞 Телефон:</strong> +38 012 345 67 89</p>
+    <p><strong>📍 Адреса:</strong> Київ, Україна</p>
+</section>
+
+<footer>
+    © 2026 DIMA | Авто з США
+</footer>
+
+</body>
+</html>
